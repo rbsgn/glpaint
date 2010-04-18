@@ -65,4 +65,6 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 @property (nonatomic, retain) IBOutlet PaintingWindow *window;
 @property (nonatomic, retain) IBOutlet PaintingView *drawingView;
 
+- (IBAction)save:(id)sender;
+
 @end

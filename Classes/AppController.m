@@ -172,13 +172,7 @@ static void HSL2RGB(float h, float s, float l, float* outR, float* outG, float* 
 	HSL2RGB((CGFloat) 2.0 / (CGFloat)kPaletteSize, kSaturation, kLuminosity, &components[0], &components[1], &components[2]);
 	// Set the color using OpenGL
 	glColor4f(components[0], components[1], components[2], kBrushOpacity);
-	
-	// Look in the Info.plist file and you'll see the status bar is hidden
-	// Set the style to black so it matches the background of the application
-	[application setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:NO];
-	// Now show the status bar, but animate to the style.
-	[application setStatusBarHidden:NO animated:YES];
-	
+
 	// Load the sounds
 	NSBundle *mainBundle = [NSBundle mainBundle];	
 	erasingSound = [[SoundEffect alloc] initWithContentsOfFile:[mainBundle pathForResource:@"Erase" ofType:@"caf"]];
@@ -221,6 +215,11 @@ static void HSL2RGB(float h, float s, float l, float* outR, float* outG, float* 
 		[drawingView erase];
 		lastTime = CFAbsoluteTimeGetCurrent();
 	}
-}	
+}
+
+- (IBAction)save:(id)sender {
+	UIImage *image = [drawingView imageRepresentation];
+    UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
+}
 
 @end
