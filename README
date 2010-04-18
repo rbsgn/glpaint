@@ -1,0 +1,12 @@
+This project solves problem of creating simple OpenGL ES painting application. It is based on Apple sample project GLPaint (http://developer.apple.com/iphone/library/samplecode/GLPaint/).
+
+Why not just use Apple's code? Because it paints psychedelic images :-) I don't like it. So, I decided to modify their code. After searching on the Internet I found a lot of requests regarding simple OpenGL ES painting application but there was no working solution for this problem.
+
+Fortunately, I found some pieces of the puzzle to solve it:
+ - http://www.bit-101.com/blog/?p=1861 - Saving OpenGL ES view content to the Photo Album
+ - https://devforums.apple.com/message/72255 - (GLPaint related question)
+ - http://groups.google.com/group/android-developers/browse_thread/thread/2cb496c5da3b6955?pli=1 - Using PNG transparent images as OpenGL ES 2D textures
+
+So, thanks to these pieces I have created this project.
+
+Enjoy it.
