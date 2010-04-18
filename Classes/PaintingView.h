@@ -87,6 +87,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 @property(nonatomic, readwrite) CGPoint location;
 @property(nonatomic, readwrite) CGPoint previousLocation;
 
--(void)erase;
+- (void)erase;
+- (UIImage *)imageRepresentation;
 
 @end
