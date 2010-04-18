@@ -253,8 +253,8 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 	
 	//Clear the buffer
 	glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
-	glClearColor(0.0, 0.0, 0.0, 1.0);
 	
 	//Display the buffer
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
