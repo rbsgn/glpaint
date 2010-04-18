@@ -100,7 +100,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 		
 		// Create a texture from an image
 		// First create a UIImage object from the data in a image file, and then extract the Core Graphics image
-		brushImage = [UIImage imageNamed:@"Particle.png"].CGImage;
+		brushImage = [UIImage imageNamed:@"Brush.png"].CGImage;
 		
 		// Get the width and height of the image
 		width = CGImageGetWidth(brushImage);
@@ -133,7 +133,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 			// Enable use of the texture
 			glEnable(GL_TEXTURE_2D);
 			// Set a blending function to use
-			glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+			glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 			// Enable blending
 			glEnable(GL_BLEND);
 		}
@@ -149,7 +149,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 		glEnable(GL_TEXTURE_2D);
 		glEnableClientState(GL_VERTEX_ARRAY);
 	    glEnable(GL_BLEND);
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+		glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 		glEnable(GL_POINT_SPRITE_OES);
 		glTexEnvf(GL_POINT_SPRITE_OES, GL_COORD_REPLACE_OES, GL_TRUE);
 		glPointSize(width / kBrushScale);

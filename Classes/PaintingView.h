@@ -54,9 +54,9 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 
 //CONSTANTS:
 
-#define kBrushOpacity		(1.0 / 3.0)
+#define kBrushOpacity		1.0
 #define kBrushPixelStep		3
-#define kBrushScale			2
+#define kBrushScale			4
 #define kLuminosity			0.75
 #define kSaturation			1.0
 

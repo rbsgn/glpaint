@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B612B1F0DDCF277003A5CC7 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B612B1E0DDCF277003A5CC7 /* Particle.png */; };
 		1B8CA3120DC8E3A4002C657A /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CA30B0DC8E3A4002C657A /* AppController.m */; };
 		1B8CA3130DC8E3A4002C657A /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CA30D0DC8E3A4002C657A /* PaintingView.m */; };
 		1B8CA3140DC8E3A4002C657A /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CA30F0DC8E3A4002C657A /* SoundEffect.m */; };
@@ -30,10 +29,10 @@
 		2D500C820D5A7DAE00DBA0E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500C810D5A7DAE00DBA0E3 /* AudioToolbox.framework */; };
 		AF85865410694D4D0004D36B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF85865310694D4D0004D36B /* MainWindow.xib */; };
 		AF858950106977F20004D36B /* PaintingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85894F106977F20004D36B /* PaintingWindow.m */; };
+		C9A8F78C117B7B0F003E50EF /* Brush.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A8F78B117B7B0F003E50EF /* Brush.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B612B1E0DDCF277003A5CC7 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
 		1B8CA30A0DC8E3A4002C657A /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Classes/AppController.h; sourceTree = "<group>"; };
 		1B8CA30B0DC8E3A4002C657A /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Classes/AppController.m; sourceTree = "<group>"; };
 		1B8CA30C0DC8E3A4002C657A /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintingView.h; path = Classes/PaintingView.h; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		AF85865310694D4D0004D36B /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		AF85894E106977F20004D36B /* PaintingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintingWindow.h; path = Classes/PaintingWindow.h; sourceTree = "<group>"; };
 		AF85894F106977F20004D36B /* PaintingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintingWindow.m; path = Classes/PaintingWindow.m; sourceTree = "<group>"; };
+		C9A8F78B117B7B0F003E50EF /* Brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brush.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +116,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9A8F78B117B7B0F003E50EF /* Brush.png */,
 				AF85865310694D4D0004D36B /* MainWindow.xib */,
 				1B8CA3650DC8E818002C657A /* Icon.png */,
-				1B612B1E0DDCF277003A5CC7 /* Particle.png */,
 				1BD0B6AA0DDCA9B800E538F8 /* Default.png */,
 				28F25BBF0D64BF0B00158CCD /* Recording.data */,
 				28F25BC00D64BF0B00158CCD /* Select.caf */,
@@ -213,8 +213,8 @@
 				1BBE306F0DD273B90012773B /* Red.png in Resources */,
 				1BBE30700DD273B90012773B /* Yellow.png in Resources */,
 				1BD0B6AB0DDCA9B800E538F8 /* Default.png in Resources */,
-				1B612B1F0DDCF277003A5CC7 /* Particle.png in Resources */,
 				AF85865410694D4D0004D36B /* MainWindow.xib in Resources */,
+				C9A8F78C117B7B0F003E50EF /* Brush.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
